@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Sweet Home | Admin Dashboard</title>
+
+    <link rel="stylesheet" href="frontend/admin.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         BACKGROUND
+    ========================================== -->
+
+    <div class="background">
+
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+        <div class="glow glow-3"></div>
+
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+
+    </div>
+
+
+
+    <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
+    <header class="navbar">
+
+        <div class="brand">
+
+            <span class="brand-small">
+                HANDCRAFTED
+            </span>
+
+            <span class="brand-name">
+                Sweet Home
+            </span>
+
+        </div>
+
+
+        <nav>
+
+            <a href="#dashboard" class="active">
+                Dashboard
+            </a>
+
+            <a href="#orders">
+                Orders
+            </a>
+
+            <a href="#products">
+                Products
+            </a>
+
+            <a href="#customers">
+                Customers
+            </a>
+
+        </nav>
+
+
+        <div class="nav-actions">
+
+            <button class="icon-button">
+                🔔
+            </button>
+
+            <button class="profile-button">
+                V
+            </button>
+
+            <!-- LOGOUT BUTTON -->
+            <button class="logout-btn" id="logout-btn">
+                Logout
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================================
+         MAIN
+    ========================================== -->
+
+    <main>
+
+
+        <!-- =====================================
+             HERO
+        ====================================== -->
+
+        <section class="hero" id="dashboard">
+
+
+            <!-- LEFT CONTENT -->
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    SWEET HOME CHOCOLATES
+                </p>
+
+
+                <h1>
+
+                    Handcrafted
+                    <span>Chocolate</span>
+
+                </h1>
+
+
+                <p class="hero-text">
+
+                    Manage your chocolate orders,
+                    products and customers from one
+                    beautiful dashboard.
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a href="#orders"
+                       class="button primary">
+
+                        View Orders
+
+                    </a>
+
+
+                    <a href="#products"
+                       class="button secondary">
+
+                        Explore Products
+
+                    </a>
+
+                </div>
+
+
+                <div class="hero-mini-stats">
+
+                    <div>
+
+                        <strong>
+                            100%
+                        </strong>
+
+                        <span>
+                            Handmade
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            3
+                        </strong>
+
+                        <span>
+                            Chocolates
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            ❤️
+                        </strong>
+
+                        <span>
+                            Made With Love
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 PREMIUM CHOCOLATE IMAGE
+            ================================== -->
+
+            <div class="hero-visual">
+
+
+                <div class="image-glow"></div>
+
+
+                <div class="image-orbit orbit-one"></div>
+
+                <div class="image-orbit orbit-two"></div>
+
+
+                <div class="hero-image-wrapper">
+
+                    <img
+                        src="frontend/assets/new.jpeg"
+                        alt="Sweet Home Premium Chocolates"
+                        class="hero-chocolate-image"
+                    >
+
+                </div>
+
+
+                <div class="image-sparkle sparkle-1">
+                    ✦
+                </div>
+
+                <div class="image-sparkle sparkle-2">
+                    ✧
+                </div>
+
+                <div class="image-sparkle sparkle-3">
+                    ✦
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             DASHBOARD
+        ========================================== -->
+
+        <section class="dashboard-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p>
+                        YOUR BUSINESS
+                    </p>
+
+                    <h2>
+                        Dashboard
+                    </h2>
+
+                </div>
+
+                <span class="live-status">
+                    ● LIVE
+                </span>
+
+            </div>
+
+
+            <div class="stats-grid">
+
+
+                <!-- ORDERS -->
+
+                <div class="glass-card stat-card">
+
+                    <div class="stat-icon">
+                        📦
+                    </div>
+
+                    <div>
+
+                        <span>
+                            TOTAL ORDERS
+                        </span>
+
+                        <h3 id="total-orders">
+                            0
+                        </h3>
+
+                        <small>
+                            Customer orders
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- REVENUE -->
+
+                <div class="glass-card stat-card">
+
+                    <div class="stat-icon">
+                        ₹
+                    </div>
+
+                    <div>
+
+                        <span>
+                            TOTAL REVENUE
+                        </span>
+
+                        <h3>
+                            ₹<b id="total-revenue">0</b>
+                        </h3>
+
+                        <small>
+                            Chocolate sales
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PRODUCTS -->
+
+                <div class="glass-card stat-card">
+
+                    <div class="stat-icon">
+                        🍫
+                    </div>
+
+                    <div>
+
+                        <span>
+                            PRODUCTS
+                        </span>
+
+                        <h3>
+                            3
+                        </h3>
+
+                        <small>
+                            Available chocolates
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CUSTOMERS -->
+
+                <div class="glass-card stat-card">
+
+                    <div class="stat-icon">
+                        👥
+                    </div>
+
+                    <div>
+
+                        <span>
+                            CUSTOMERS
+                        </span>
+
+                        <h3 id="total-customers">
+                            0
+                        </h3>
+
+                        <small>
+                            Happy customers
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             ORDERS
+        ========================================== -->
+
+        <section class="orders-section"
+                 id="orders">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p>
+                        CUSTOMER ACTIVITY
+                    </p>
+
+                    <h2>
+                        Recent Orders
+                    </h2>
+
+                </div>
+
+                <a href="#orders"
+                   class="view-all">
+
+                    View All →
+
+                </a>
+
+            </div>
+
+
+            <div id="orders-container"
+                 class="orders-grid">
+
+                <div class="glass-card empty-order">
+
+                    <div class="empty-icon">
+                        🍫
+                    </div>
+
+                    <h3>
+                        Loading Orders...
+                    </h3>
+
+                    <p>
+                        Your customer orders will
+                        appear here.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             PRODUCTS
+        ========================================== -->
+
+        <section class="products-section"
+                 id="products">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p>
+                        SWEET HOME COLLECTION
+                    </p>
+
+                    <h2>
+                        Our Chocolates
+                    </h2>
+
+                </div>
+
+
+                <button class="add-product"
+                        id="add-product-btn">
+
+                    + Add Product
+
+                </button>
+
+            </div>
+
+
+            <div class="products-grid" id="products-grid">
+
+                <!-- Products are loaded from MongoDB by admin.js -->
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             BOTTOM BANNER
+        ========================================== -->
+
+        <section class="love-section">
+
+            <div>
+
+                <p>
+                    SWEET HOME
+                </p>
+
+                <h2>
+
+                    Every chocolate
+                    <span>has a story.</span>
+
+                </h2>
+
+                <p class="love-text">
+
+                    From our kitchen to your customer's
+                    doorstep — made with patience,
+                    creativity and love.
+
+                </p>
+
+            </div>
+
+
+            <div class="big-chocolate">
+                🍫
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer>
+
+        <div class="footer-logo">
+            Sweet Home
+        </div>
+
+        <p>
+            Homemade chocolates made with love ❤️
+        </p>
+
+        <small>
+            © 2026 Sweet Home Chocolates
+        </small>
+
+    </footer>
+
+
+    <script src="frontend/admin.js"></script>
+
+</body>
+
+</html>

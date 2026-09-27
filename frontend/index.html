@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <title>SWEET HOME CHOCOLATE</title>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header>
+
+        <nav>
+
+            <h1>
+                Sweet Home
+            </h1>
+
+
+            <div>
+
+                <a href="#">
+                    Home
+                </a>
+
+                <a href="#products">
+                    Products
+                </a>
+
+                <a href="#cart">
+                    Cart
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <main>
+
+
+        <!-- =========================
+             HERO SECTION
+        ========================== -->
+
+        <section class="hero">
+
+            <h2>
+                Homemade Chocolates made with Love ❤️
+            </h2>
+
+            <p>
+                Delicious handmade chocolates prepared specially
+                for your sweetest moments.
+            </p>
+
+            <button>
+                Shop Now
+            </button>
+
+        </section>
+
+
+
+        <!-- =========================
+             PRODUCTS SECTION
+        ========================== -->
+
+        <section
+            class="products"
+            id="products"
+        >
+
+            <h2>
+                Our Chocolates 🍫
+            </h2>
+
+
+            <!--
+                Products will be loaded
+                dynamically from MongoDB
+            -->
+
+            <div
+                class="product-container"
+                id="product-container"
+            >
+
+                <!-- Products will appear here -->
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CART SECTION
+        ========================== -->
+
+        <section
+            class="cart"
+            id="cart"
+        >
+
+            <h2>
+                Your Cart 🛒
+            </h2>
+
+
+            <div id="cart-items">
+
+                <!-- Cart products will appear here -->
+
+            </div>
+
+
+            <h3>
+
+                Total:
+                ₹<span id="cart-total">0</span>
+
+            </h3>
+
+        </section>
+
+
+
+        <!-- =========================
+             CHECKOUT SECTION
+        ========================== -->
+
+        <section class="checkout">
+
+            <h2>
+                Checkout 🧾
+            </h2>
+
+
+            <form id="checkout-form">
+
+
+                <!-- NAME -->
+
+                <input
+                    type="text"
+                    id="customer-name"
+                    placeholder="Full Name"
+                >
+
+
+
+                <!-- PHONE -->
+
+                <input
+                    type="tel"
+                    id="customer-phone"
+                    placeholder="Phone Number"
+                >
+
+
+
+                <!-- ADDRESS -->
+
+                <textarea
+                    id="customer-address"
+                    placeholder="Delivery Address"
+                ></textarea>
+
+
+
+                <!-- CITY -->
+
+                <input
+                    type="text"
+                    id="customer-city"
+                    placeholder="City"
+                >
+
+
+
+                <!-- PINCODE -->
+
+                <input
+                    type="text"
+                    id="customer-pincode"
+                    placeholder="Pincode"
+                >
+
+
+
+                <!-- CHECKOUT TOTAL -->
+
+                <h3>
+
+                    Total:
+                    ₹<span id="checkout-total">0</span>
+
+                </h3>
+
+
+
+                <!-- PLACE ORDER -->
+
+                <button type="submit">
+
+                    🍫 Place Order
+
+                </button>
+
+
+            </form>
+
+        </section>
+
+
+
+        <!-- =====================================
+             ORDER CONFIRMATION
+        ====================================== -->
+
+        <section
+            class="order-confirmation"
+            id="order-confirmation"
+        >
+
+            <div class="confirmation-box">
+
+
+                <div class="confirmation-icon">
+
+                    🍫
+
+                </div>
+
+
+
+                <h2>
+
+                    Order Confirmed!
+
+                </h2>
+
+
+
+                <p>
+
+                    Thank you,
+                    <span id="confirmed-name"></span>!
+
+                </p>
+
+
+
+                <p>
+
+                    Your chocolate order has been
+                    successfully placed.
+
+                </p>
+
+
+
+                <h3>
+
+                    Order Total:
+                    ₹<span id="confirmed-total">0</span>
+
+                </h3>
+
+
+
+                <button id="continue-shopping">
+
+                    Continue Shopping 🛍️
+
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Sweet Home Chocolates
+
+        </p>
+
+    </footer>
+
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
